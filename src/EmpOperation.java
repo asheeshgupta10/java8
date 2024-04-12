@@ -137,5 +137,8 @@ public class EmpOperation {
         System.out.println(empasc);
 
 
+        List<String> employeeName = employeeList.stream().map(Employee::getName).distinct().collect(Collector.toList());
+
+        System.out.println(employeeName);
     }
 }
